@@ -1,9 +1,9 @@
 site_name: can-log-analyzer
-site_url: https://chaitu-ycr.github.io/can-log-analyzer/
+site_url: https://auto-py-utils.github.io/can-log-analyzer/
 site_description: "A web-based tool for analyzing CAN log files using NiceGui, Plotly, and cantools."
-site_author:  chaitu-ycr
-repo_name: "chaitu-ycr/can-log-analyzer"
-repo_url: https://github.com/chaitu-ycr/can-log-analyzer
+site_author:  auto-py-utils
+repo_name: "auto-py-utils/can-log-analyzer"
+repo_url: https://github.com/auto-py-utils/can-log-analyzer
 edit_uri: blob/main/
 
 nav:

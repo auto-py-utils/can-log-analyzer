@@ -2,6 +2,8 @@
 
 A web-based tool for analyzing CAN log files using NiceGui, Plotly, and cantools.
 
+![CAN Log Analyzer UI](https://github.com/auto-py-utils/can-log-analyzer/tree/main/docs/_assets/can_log_analyzer_ui.png)
+
 ## Features
 
 - Upload and parse CAN log files (`.asc`, `.blf`)
@@ -18,16 +20,48 @@ A web-based tool for analyzing CAN log files using NiceGui, Plotly, and cantools
 
 ## Usage - Web App
 
-To start the web application, run:
+The application can be launched in any of these ways:
 
-```powershell
-python -m can_log_analyzer.run_web_app
+```bash
+python -m can_log_analyzer
 ```
 
-- The app will launch in your default web browser at `http://localhost:8501` (unless otherwise configured).
+```bash
+can-log-analyzer
+```
+
+```bash
+uv run can-log-analyzer
+```
+
+- The app will launch in your default web browser at `http://localhost:8080` by default.
 - Use the sidebar to upload your CAN log files (`.asc`, `.blf`) and CAN database files (`.dbc`).
 - Select channels, messages, and signals to visualize.
 - Choose plot type and customize grid/axis options as needed.
 - Interactive plots and analysis will be available after loading your files.
 
-## [source manual](https://chaitu-ycr.github.io/can-log-analyzer/source-manual/)
+## Usage - Development Scripts
+
+The repository includes OS-specific wrappers under `scripts/` for common workflows.
+
+Linux:
+
+```bash
+./scripts/venv_setup.sh
+./scripts/build_wheel_package.sh
+./scripts/run_pytests_with_report.sh
+./scripts/deploy_docs_to_github.sh
+```
+
+Windows:
+
+```powershell
+scripts\venv_setup.bat
+scripts\build_wheel_package.bat
+scripts\run_pytests_with_report.bat
+scripts\deploy_docs_to_github.bat
+```
+
+Both sets of scripts install `uv` if missing, sync dependencies with `uv sync --link-mode=copy`, and then execute the requested task.
+
+## [source manual](https://auto-py-utils.github.io/can-log-analyzer/source-manual/)

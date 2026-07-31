@@ -5,7 +5,7 @@ description = "CAN log Analyzer"
 license = { file = "LICENSE" }
 readme = "README.md"
 requires-python = ">=3.10"
-authors = [{ name = "chaitu-ycr", email = "chaitu.ycr@gmail.com" }]
+authors = [{ name = "auto-py-utils", email = "chaitu.ycr@gmail.com" }]
 keywords = ["python", "CAN", "log", "analyzer"]
 classifiers = [
     "Programming Language :: Python :: 3.10",
@@ -46,9 +46,12 @@ dev = [
 ]
 
 [project.urls]
-homepage = "https://github.com/chaitu-ycr/can-log-analyzer"
-repository = "https://github.com/chaitu-ycr/can-log-analyzer/"
-documentation = "https://chaitu-ycr.github.io/can-log-analyzer"
+homepage = "https://github.com/auto-py-utils/can-log-analyzer"
+repository = "https://github.com/auto-py-utils/can-log-analyzer/"
+documentation = "https://auto-py-utils.github.io/can-log-analyzer"
+
+[project.scripts]
+can-log-analyzer = "can_log_analyzer.app:main"
 
 [tool.uv]
 package = true

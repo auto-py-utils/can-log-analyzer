@@ -34,6 +34,10 @@ uv sync --link-mode=copy
 if %ERRORLEVEL% NEQ 0 goto ERROR
 echo Completed syncing dependencies.
 
+REM Ensure report directories exist
+mkdir tests\report\test_reports 2>nul
+mkdir tests\report\cov 2>nul
+
 REM ----------------------------
 REM 4. Run Pytest with Reports
 REM ----------------------------
@@ -47,10 +51,6 @@ uv run pytest tests/ ^
     --tb=short
 if %ERRORLEVEL% NEQ 0 goto ERROR
 
-REM ----------------------------
-REM 5. Deactivate Virtual Environment and Cleanup
-REM ----------------------------
-call "%VENV_DEACTIVATE%"
 popd
 goto :EOF
 
