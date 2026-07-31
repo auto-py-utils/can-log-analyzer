@@ -2,7 +2,7 @@
 
 A web-based tool for analyzing CAN log files using NiceGui, Plotly, and cantools.
 
-![CAN Log Analyzer UI](https://github.com/auto-py-utils/can-log-analyzer/tree/main/docs/_assets/can_log_analyzer_ui.png)
+![CAN Log Analyzer UI](https://raw.githubusercontent.com/auto-py-utils/can-log-analyzer/main/docs/_assets/can_log_analyzer_ui.png)
 
 ## Features
 
